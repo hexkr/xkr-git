@@ -1,0 +1,18 @@
+弹性盒子布局
+(1) display:flex;设置为弹性盒子布局
+(2) flex-direction:row(默认，主轴为横轴)|row-reverse(主轴为横轴且反向)|column(主轴为竖轴)|column-reverse(主轴为竖轴且反向)
+(3) justify-content：flex-start(默认，从左开始)|flex-end(从右开始)|center(中间对齐)|space-between(两端对其)|space-around(每个项目两端距离相等)
+(4) align-items:flex-start(默认，从起始点开始)|flex-end(从终点开始)|center(居中)|stretch(如果交叉轴是竖轴，高度未设置则高度充满整个父级，
+如果交叉周是横轴，宽度未设置，则宽度充满整个父级)|baseline(以第一行文字为基准齐，也就是元素底端对齐)
+(5) align-content(多线对齐方式):flex-sart(两行元素紧挨着，与交叉轴起始点平齐)|flex-sart(两行元素紧挨着，与交叉轴起终点平齐)|center(居中)|
+space-between(两端对齐)|space-around(每个项目两端距离相等)
+(6) flex-wrap:wrap(强制换行)|nowrap(默认，不换行)
+(7) flex-basis(元素在主轴上的尺寸，其会将width/height覆盖):xxpx;此属性如果不写，则继承宽度或者高度的值。
+(8) flex-grow(将主轴剩余空间按照此比进行分配):1;例如三个元素的width:100px,父级宽度600px,比例为1:2:1，那么剩余空间平均分配后的宽度为75:150:75，
+加上原来的宽度就是175px:250px:175px
+(9) flex-shrink(如果宽度过大会按照此比进行压缩):1；例如三个元素的宽度分别为400,500,200,父级宽度600px,比例为1:2:1，那么超出空间平均分配后的宽度
+为125:312.5:62.5，原来的宽度减去此宽度就是275px:287.5px:137.5px。计算公式目标元素宽 - (目标元素的宽*缩小比)/(各项宽度*缩小比的和)*超出宽度值
+(10) align-self:flex-start(默认，从起始点开始)|flex-end(从终点开始)|center(居中)|stretch(如果交叉轴是竖轴，高度未设置则高度充满整个父级，如果
+交叉周是横轴，宽度未设置，则宽度充满整个父级)|baseline(以第一行文字为基准齐，也就是元素底端对齐)
+(11) flex:flex-grow,flex-shrink,flex-basis;默认是0,1，auto。
+（12）order:1;用于设定顺序，值越大，越靠后。
