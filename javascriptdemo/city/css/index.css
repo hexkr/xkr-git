@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+.wrapper {
+    margin-top:50px;
+    position: relative;
+    width: 500px;
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%);
+    background: linear-gradient(rgb(224, 230, 233), rgb(19, 137, 196));
+}
+
+.wrapper .messageBox {
+    position: relative;
+    margin: 0 20px;
+}
+
+.wrapper .messageBox h3 {
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.wrapper .messageBox textarea {
+    width: 400px;
+    height: 300px;
+}
+
+#province,
+#city,
+#district,
+input,
+textarea {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.wrapper .tip,
+.nameTip {
+    color: #f00;
+    font-size: 8px;
+    display: none;
+}
+
+#name,
+#phone {
+    width: 300px;
+}
+
+#textarea {
+    vertical-align: middle;
+}
+
+#submit {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.message {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+    background: linear-gradient(rgb(224, 230, 233), rgb(19, 137, 196));
+    box-shadow: 0 0 10px 4px #ccc inset;
+    display: none;
+}
+
+.message h3 {
+    text-align: center;
+    line-height: 70px;
+    margin: 0;
+}
+
+.message .receive,
+.dress,
+.phoneNumber {
+    margin-left: 50px;
+    display: block;
+    margin-top: 10px;
+}
+
+.message .btn,
+.back {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    left: 95px;
+}
+
+.message .btn {
+    left: 215px;
+}

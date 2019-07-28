@@ -1,0 +1,112 @@
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfixed::before,
+.clearfixed::after {
+    content: "";
+    display: table;
+}
+
+.clearfixed::after {
+    clear: both;
+}
+
+.container {
+    min-width: 600px;
+    width: 910px;
+    margin: 50px auto;
+}
+
+/* 一级菜单 */
+.container .nav {
+    background: #808080;
+    height: 48px;
+}
+
+.container .nav .item {
+    position: relative;
+    float: left;
+    margin: 0 20px;
+}
+
+.container .nav .item>a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 48px;
+    height: 46px;
+    padding: 0 20px;
+    z-index: 9;
+    border: 1px solid #808080;
+}
+
+.container .nav .item>a:hover {
+    color: #bc0303;
+    border: 1px solid #c9c9c9;
+    height: 48px;
+    background: #fff;
+    border-bottom: none;
+}
+
+/* 二级菜单 */
+.container .nav .item .nav-list {
+    display: none;
+    position: absolute;
+    top: 48px;
+    width: 150px;
+    border: 1px solid #c9c9c9;
+    z-index: 1;
+}
+
+.container .nav .item .nav-list li {
+    padding: 10px 0 10px 12px;
+    line-height: 20px;
+    height: 20px;
+    text-align: left;
+}
+
+.container .nav .item .nav-list a {
+    color: #222;
+    font-size: 12px;
+}
+
+.container .nav .item .nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* 二级菜单显示控制 */
+.container .nav .show .nav-list {
+    display: block;
+}
+
+.container .nav .show>a {
+    color: #bc0303;
+    border: 1px solid #c9c9c9;
+    height: 48px;
+    background: #fff;
+    border-bottom: none;
+}
+
+/* 只要二级目录中项目多余四个就两列显示 */
+.container .nav .item .double {
+    width: 330px !important;
+
+}
+
+.container .nav .item .double>li {
+    display: inline-block;
+    width: 150px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全国城市三级联动</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="messageBox">
+            <h3>请填写具体信息</h3>
+            <form name="myform">
+                姓名: <input type="text" id="name" placeholder="请填写姓名"> <span class="nameTip">姓名不能为空</span><br><br>
+                手机: <input type="text" name="" id="phone" placeholder="请填写手机号"> <span class="tip">号码输入错误</span><br><br>
+                省份: <select name="" id="province"></select>
+                城市: <select name="" id="city"></select>
+                区县: <select name="" id="district"></select><br><br>
+                街道: <textarea name="" id="textarea" cols="30" rows="10"
+                    style="width:385px;height:150px"></textarea><br><br>
+                <input type="button" value="提交" id="submit">
+            </form>
+        </div>
+        <div class="message">
+            <h3>喂！快来核对信息啦！</h3>
+            <span class="receive">收件人：</span>
+            <span class="phoneNumber"></span>
+            <p class="dress">地址：</p>
+            <input type="button" value="返回修改" class="back">
+            <input type="button" value="确认" class="btn">
+        </div>
+    </div>
+
+
+    <script src="js/作业 js-全国三级城市联动Select选择 素材.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

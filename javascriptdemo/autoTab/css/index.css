@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+.wrapper{
+    width: 532px;
+    height: 219px;
+    border: 5px solid #000;
+    margin: 100px auto;
+    position: relative;
+}
+.wrapper .left{
+    float: left;
+    width: 146px;
+    height: 218px;
+}
+.wrapper .left>img{
+    width: 138px;
+    height: 70px;
+    margin: 0;
+}
+.wrapper .right{
+    float: right;
+    width: 386px;
+    height: 216px;
+}
+.wrapper .right>img{
+    position: absolute;
+    display: none;
+    height: 219px;
+    width: 386px;
+}
+.wrapper .pointer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s linear;
+    /* 这个功能太牛X */
+    pointer-events:none;
+}
+.active{
+    display: block !important;
+}

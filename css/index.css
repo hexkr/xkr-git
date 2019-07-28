@@ -1,0 +1,144 @@
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    line-height: 42px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: none;
+}
+.demo-dropdown{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    width: 150px;
+    border: 1px solid #000206;
+    list-style: none;
+}
+.demo-dropdown li{
+    margin: 5px -27px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.demo-dropdown li a{
+    font-size: 14px;
+    color: #fff;
+}
+.masthead{
+    position: relative;
+    text-align: center;
+    background: url("../image/title.jpg") no-repeat;
+    color: #fff;
+    padding: 135px 0 110px;
+    margin-bottom: 0;
+}
+.masthead h1{
+    margin-left:-400px; 
+    font-size: 50px !important;
+    font-weight: 700;  
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.masthead:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 497px;
+    background-image: url("../image/bs-docs-masthead-pattern.png");
+    background-position: center;
+    opacity: 0.5;
+}
+.masthead p{
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+.masthead ul li{
+    list-style: none;
+}
+.masthead ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: -40px;
+}
+#city{
+    height: 143px;
+    width: 275px;
+    margin-top: 3px;
+}
+@media only screen and (max-width:768px){
+    .masthead{
+        padding: 60px 0 80px;
+    }
+    .masthead h1{
+        font-size: 60px; 
+    }
+    .masthead p{
+        font-size: 18px;
+    }
+    .projects-header h2{
+        font-size: 30px !important;
+    }
+    .thumbnail.project{
+        height: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+.media{
+    text-align: center;
+    background: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin: 0;
+}
+.media a{
+    margin-left:20px; 
+}
+
+
+.projects-header{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 40px;
+    
+}
+.projects-header .project-container{
+    width: 564px;
+}
+.projects-header h2{
+    font-size: 42px;
+    margin: 20px 0 10px;
+}
+.projects-header p{
+    margin-bottom: 10px;
+}
+
+
+
+.thumbnail.project{
+    height: 262px;
+    max-width: 310px;
+}
+.set{
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0;
+    max-width: 310px;
+    
+}
+.set a{
+    text-decoration: none;
+}

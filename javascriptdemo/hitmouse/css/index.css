@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#scene{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    background: url("../image/bg.png");
+    user-select: none;
+}
+#start{
+    position: absolute;
+    left: 32px;
+    top: 127px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    transform: rotate(-26deg);
+}
+#score,#time{
+    position: absolute;
+    top: 178px;
+    left: 515px;
+    font-weight: 600;
+}
+#score{
+    left: 280px;
+}
+#hammer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -40px;
+    margin-left: -40px;
+    cursor: none;
+    user-select: none;
+    z-index: 9;
+}
+
+div[id^="hole"] img{
+    position: absolute;
+    top: 102px;
+    left: 0;
+} 
+div[id^="hole"]{
+    position: absolute;
+    top: 102px;
+    left: 0;
+    width: 102px;
+    height: 103px;
+    overflow: hidden;
+}
+#hole1{
+    top: 170px;
+    left: 140px;
+}
+#hole2{
+    top: 170px;
+    left: 330px;
+}
+#hole3{
+    top: 170px;
+    left: 530px;
+}
+#hole4{
+    top: 260px;
+    left: 120px;
+}
+#hole5{
+    top: 260px;
+    left: 335px;
+}
+#hole6{
+    top: 260px;
+    left: 530px;
+}
+#hole7{
+    top: 350px;
+    left: 110px;
+}
+#hole8{
+    top: 360px;
+    left: 335px;
+}
+#hole9{
+    top: 360px;
+    left: 550px;
+}

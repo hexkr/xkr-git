@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    width: 480px;
+    height: 480px;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+}
+.wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .load{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .load img{
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    animation: run 0.8s linear infinite;
+}
+@keyframes run{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
